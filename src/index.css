@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+body {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: rgba(58, 53, 65, 0.38);
+}
+input {
+  outline: none;
+}
+.form-row {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  color: #999;
+  cursor: text;
+  /* transition: all 0.15s ease-in-out 0s; */
+  transition: 250ms;
+}
+.form-textbox {
+  width: 95%;
+  padding: 20px;
+}
+.form-textbox:focus ~ .form-label,
+.form-textbox:valid ~ .form-label {
+  padding: 0 2px;
+  background-color: white;
+  top: -8px;
+  left: 16px;
+  letter-spacing: 0.15px;
+  color: rgba(58, 53, 65, 0.68);
+  font-size: 0.8em;
+  cursor: pointer;
+}
